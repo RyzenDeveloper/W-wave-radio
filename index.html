@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>W-wave</title>
+  <link rel="stylesheet" href="css/css-normalize.css">
+  <link rel="stylesheet" href="css/css-style.css">
+  <link rel="stylesheet" href="css/css-mediastyle.css">
+  <link rel="shortcut icon" type="image/png" href="favicons/icons-w-icon.svg">
+</head>
+<body>
+<header class="header">
+  <div class="header-up-wrap">
+    <div class="header-logo-gray">
+      <div class="container">
+        <div class="header-up-mobile">
+          <!-- Logo Link -->
+          <a aria-label="Logotype W-Wave" href="#">
+            <img src="images/svg/img-logo-wave.svg" alt="Logo">
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <nav class="header-up">
+        <!-- Logo for desktop -->
+        <a class="header-logo" aria-label="Logotype W-wave" href="#">
+          <img src="images/svg/img-logo-wave.svg" alt="Logo">
+        </a>
+        <!-- Upper Menu Links -->
+        <ul class="header-up-list" id="menu">
+          <li><a href="#podcasts" class="header-up-list__link">Подкасты</a></li>
+          <li><a href="#shows" class="header-up-list__link">Передачи</a></li>
+          <li><a href="#guests" class="header-up-list__link">Гости</a></li>
+          <li><a href="#playlists" class="header-up-list__link">Плейлисты</a></li>
+          <li><a href="#about-us" class="header-up-list__link">О нас</a></li>
+        </ul>
+        <!-- Search Functionality -->
+        <div class="header-search">
+          <button class="header__search-button" aria-label="Open the search form">
+            <svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z"
+                stroke="#6D31EE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+              <path d="M20.9999 21L16.6499 16.65" stroke="#6D31EE" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round"></path>
+            </svg>
+          </button>
+        </div>
+      </nav>
+    </div>
+  </div>
+</header>
+
+<section class="radio">
+  <div class="container">
+    <div class="radio-content">
+      <!-- Title with a styled span for the radio name -->
+      <h1 class="radio-content__title">Радио <span class="text-italic">W-Wave</span></h1>
+      <!-- Descriptive text about the radio station -->
+      <p class="radio-content__text">
+        Привет, на связи W-Wave! Раньше мы были изданием, а теперь пробуем себя в разоворном жанре. Говорим о музыке,
+        политике, истории, науке и культуре. Здесь, помимо прямого эфира — архив передач и многое другое:)
+      </p>
+      <!-- Button to start listening to the radio -->
+      <button class="radio-listen">Слушать эфир</button>
+    </div>
+  </div>
+</section>
+
+<section class="podcasts-wrap" id="podcasts">
+  <div class="container">
+    <div class="podcasts">
+      <h1 class="podcasts-title">Подкасты</h1>
+      <ul class="podcasts-list">
+        <li class="podcasts-list__item">
+          <picture>
+            <source srcset="images/png/podcast_europe_320.png" media="(max-width: 480px)">
+            <img src="images/png/img-podcast_europe.png" alt="">
+          </picture>
+          <div class="podcasts-list__date">14 июня</div>
+          <div class="podcasts-content">
+            <div class="podcasts-content__up">
+              <div class="podcasts-info">
+                <div class="podcasts-info__time">15:43</div>
+                <div class="podcasts-info__title">Европа. XIX век</div>
+                <div class="podcasts-info__author">Дмитрий Гутенберг</div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="podcasts-list__item">
+          <picture>
+            <source srcset="./images/png/podcast_music_320.png" media="(max-width: 480px)">
+            <img src="./images/png/img-podcast_music.png" alt="">
+          </picture>
+          <div class="podcasts-list__date">11 июня</div>
+          <div class="podcasts-content">
+            <div class="podcasts-content__up">
+              <div class="podcasts-info">
+                <div class="podcasts-info__time">5:32</div>
+                <div class="podcasts-info__title">О музыке</div>
+                <div class="podcasts-info__author">Дмитрий Гутенберг</div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="podcasts-list__item">
+          <picture>
+            <source srcset="./images/png/podcast_people_320.png" media="(max-width: 480px)">
+            <img src="./images/png/img-podcast_people.png" alt="">
+          </picture>
+          <div class="podcasts-list__date">8 июня</div>
+          <div class="podcasts-content">
+            <div class="podcasts-content__up">
+              <div class="podcasts-info">
+                <div class="podcasts-info__time">8:54</div>
+                <div class="podcasts-info__title">Люди сегодня</div>
+                <div class="podcasts-info__author">Анна Васильева</div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="podcasts-list__item">
+          <picture>
+            <source srcset="./images/png/podcast_africa_320.png" media="(max-width: 480px)">
+            <img src="./images/png/img-podcast_africa.png" alt="">
+          </picture>
+          <div class="podcasts-list__date">5 июня</div>
+          <div class="podcasts-content">
+            <div class="podcasts-content__up">
+              <div class="podcasts-info">
+                <div class="podcasts-info__time">9:04</div>
+                <div class="podcasts-info__title">Хэллоу, Африка!</div>
+                <div class="podcasts-info__author">Пётр Дмитриевский</div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="podcasts-list__item">
+          <picture>
+            <source srcset="./images/png/podcast_aboutall_320.png" media="(max-width: 480px)">
+            <img src="./images/png/img-podcast_about.png" alt="">
+          </picture>
+          <div class="podcasts-list__date">2 июня</div>
+          <div class="podcasts-content">
+            <div class="podcasts-content__up">
+              <div class="podcasts-info">
+                <div class="podcasts-info__time">7:03</div>
+                <div class="podcasts-info__title">Обо всём</div>
+                <div class="podcasts-info__author">Пётр Дмитриевский</div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="podcasts-list__item">
+          <picture>
+            <source srcset="./images/png/podcast_phisics_320.png" media="(max-width: 480px)">
+            <img src="./images/png/img-podcast_colors.png" alt="">
+          </picture>
+          <div class="podcasts-list__date">28 мая</div>
+          <div class="podcasts-content">
+            <div class="podcasts-content__up">
+              <div class="podcasts-info">
+                <div class="podcasts-info__time">9:15</div>
+                <div class="podcasts-info__title">Физика цвета</div>
+                <div class="podcasts-info__author">Татьяна Флеганова</div>
+              </div>
+            </div>
+
+          </div>
+        </li>
+        <li class="podcasts-list__item">
+          <picture>
+            <source srcset="./images/png/podcast_sound_320.png" media="(max-width: 480px)">
+            <img src="./images/png/img-podcast_sound.png" alt="">
+          </picture>
+          <div class="podcasts-list__date">22 мая</div>
+          <div class="podcasts-content">
+            <div class="podcasts-content__up">
+              <div class="podcasts-info">
+                <div class="podcasts-info__time">16:04</div>
+                <div class="podcasts-info__title">Источник звука</div>
+                <div class="podcasts-info__author">Пётр Дмитриевский</div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="podcasts-list__item">
+          <picture>
+            <source srcset="./images/png/podcast_etiquete320.png" media="(max-width: 480px)">
+            <img src="./images/png/img-podcast_etiq.png" alt="">
+          </picture>
+          <div class="podcasts-list__date">18 мая</div>
+          <div class="podcasts-content">
+            <div class="podcasts-content__up">
+              <div class="podcasts-info">
+                <div class="podcasts-info__time">6:55</div>
+                <div class="podcasts-info__title">Правила этикета</div>
+                <div class="podcasts-info__author">Татьяна Флеганова</div>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="shows-wrap" id="shows">
+  <div class="container">
+    <div class="shows">
+      <div class="shows-item shows-item_select">
+        <h1 class="shows-title">Передачи</h1>
+      </div>
+      <div class="shows-item shows-item_archive shows-item__visible">
+        <picture class="shows-mic">
+          <img src="images/svg/img-shows_mic.svg" alt="">
+        </picture>
+        <div class="shows-archive">
+          <a href="#" class="shows-archive__link">Архив</a>
+          <div class="shows-archive__text">
+            В архив попадают все передачи, которые вы пропустили! Enjoy:)
+          </div>
+        </div>
+      </div>
+      <a href="#" class="shows-item">
+        <picture class="shows-item__pic">
+          <source srcset="./images/png/img-shows_1_320.png" media="(max-width: 480px)">
+          <img src="images/png/img-shows_1.png" alt="">
+        </picture>
+        <div class="shows-item__content">
+          <div class="shows-item__name">О людях и книгах</div>
+          <div class="shows-item__text">Анонсируется отдельно</div>
+          <div class="shows-item__more">
+            <span>Подробнее</span>
+          </div>
+        </div>
+      </a>
+      <a href="#" class="shows-item">
+        <picture class="shows-item__pic">
+          <source srcset="./images/png/img-shows_2_320.png" media="(max-width: 480px)">
+          <img src="images/png/img-shows_2.png" alt="">
+        </picture>
+        <div class="shows-item__content">
+          <div class="shows-item__name">Графомания td</div>
+          <div class="shows-item__text">По понедельникам в 10:00</div>
+          <div class="shows-item__more">
+            <span>Подробнее</span>
+          </div>
+        </div>
+      </a>
+      <a href="#" class="shows-item">
+        <picture class="shows-item__pic">
+          <source srcset="./images/png/img-shows_3_320.png" media="(max-width: 480px)">
+          <img src="images/png/img-shows_3.png" alt="">
+        </picture>
+        <div class="shows-item__content">
+          <div class="shows-item__name">Не Рим, не Троя</div>
+          <div class="shows-item__text">По вторникам в 12:00</div>
+          <div class="shows-item__more">
+            <span>Подробнее</span>
+          </div>
+        </div>
+      </a>
+      <a href="#" class="shows-item">
+        <picture class="shows-item__pic">
+          <source srcset="./images/png/img-shows_4_320.png" media="(max-width: 480px)">
+          <img src="images/png/img-shows_4.png" alt="">
+        </picture>
+        <div class="shows-item__content">
+          <div class="shows-item__name">Эрудит</div>
+          <div class="shows-item__text">По пятницам в 17:00</div>
+          <div class="shows-item__more">
+            <span>Подробнее</span>
+          </div>
+        </div>
+      </a>
+      <div class="shows-item shows-item_archive shows-archive__hidden">
+        <picture class="shows-mic">
+          <img src="images/svg/img-shows_mic.svg" alt="">
+        </picture>
+        <div class="shows-archive">
+          <a href="#" class="shows-archive__link">Архив</a>
+          <div class="shows-archive__text">
+            В архив попадают все передачи, которые вы пропустили! Enjoy:)
+          </div>
+        </div>
+      </div>
+      <a href="#" class="shows-item">
+        <picture class="shows-item__pic">
+          <source srcset="./images/png/img-shows_5_320.png" media="(max-width: 480px)">
+          <img src="images/png/img-shows_5.png" alt="">
+        </picture>
+        <div class="shows-item__content">
+          <div class="shows-item__name">Тонкости эпох</div>
+          <div class="shows-item__text">По субботам в 10:00</div>
+          <div class="shows-item__more">
+            <span>Подробнее</span>
+          </div>
+        </div>
+      </a>
+      <a href="#" class="shows-item">
+        <picture class="shows-item__pic">
+          <source srcset="./images/png/img-shows_6_320.png" media="(max-width: 480)">
+          <img src="images/png/img-shows_6.png" alt="">
+        </picture>
+        <div class="shows-item__content">
+          <div class="shows-item__name">Живые мысли</div>
+          <div class="shows-item__text">По воскресеньям в 15:30</div>
+          <div class="shows-item__more">
+            <span>Подробнее</span>
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+  <div class="shows-archive-container">
+    <picture class="shows-mic">
+      <img src="./images/svg/img-shows_mic.svg" alt="">
+    </picture>
+    <div class="shows-archive">
+      <a href="#" class="shows-archive__link">Архив</a>
+      <div class="shows-archive__text">
+        В&nbsp;архив попадают все&nbsp;передачи, которые вы&nbsp;пропустили! Enjoy:)
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="guests" class="guests">
+  <div class="container">
+    <h2 class="guests__title">Гости</h2>
+    <div class="container__guests">
+      <h3 class="guests__preview-title"> У&nbsp;нас бывают:</h3>
+      <p class="guests__desc">
+        Блогеры, арт-критики и деятели искусства, музыканты, молодые учёные и люди науки, историки, филологи и много
+        других интересных гостей!
+      </p>
+      <ul class="guests__list list-reset">
+        <li class="guests__item">
+          <img src="images/png/guests__olga.png" alt="Картинка Ольги Мартыновой">
+          <div class="container__desc-guests">
+            <p class="guests__artist">Ольга Мартынова</p>
+            <p class="guests__desc-artist">
+              Российский искусствовед, арт-критик, куратор выставок, дизайнер, кандидат
+              культурологии. Арт-критик газеты
+              &laquo;Коммерсантъ&raquo;. Ведёт активную блогерскую деятельность как&nbsp;куратор музея
+              &laquo;Гараж&raquo;, коим является
+              с&nbsp;2016&nbsp;года.
+            </p>
+            <div class="guests__block-bottom">
+              <a href="#" aria-label="эфиры с гостем" class="guests__link">Эфиры
+                с&nbsp;гостем</a>
+            </div>
+          </div>
+        </li>
+        <li class="guests__item">
+          <img src="images/png/guests__denis.png" alt="Картинка Дениса Гришина">
+          <div class="container__desc-guests">
+            <p class="guests__artist">Денис Гришин</p>
+            <p class="guests__desc-artist">
+              Однозначно, элементы политического процесса являются только методом политического
+              участия и&nbsp;смешаны
+              с&nbsp;не&nbsp;уникальными данными до&nbsp;степени совершённой неузнаваемости, из-за
+              чего возрастает их&nbsp;статус
+              бесполезности.
+            </p>
+            <div class="guests__block-bottom">
+              <a href="#" aria-label="эфиры с гостем" class="guests__link">Эфиры с&nbsp;гостем</a>
+            </div>
+          </div>
+        </li>
+        <li class="guests__item">
+          <img src="images/png/guests__olga-three.png" alt="Картинка Ольги Мартыновой">
+          <div class="container__desc-guests">
+            <p class="guests__artist">Ольга Мартынова</p>
+            <p class="guests__desc-artist">
+              С&nbsp;другой стороны, высококачественный прототип будущего проекта выявляет срочную
+              потребность дальнейших направлений
+              развития. В&nbsp;рамках спецификации современных стандартов, реплицированные
+              с&nbsp;зарубежных источников.
+            </p>
+            <div class="guests__block-bottom">
+              <a href="#" aria-label="эфиры с гостем" class="guests__link">Эфиры с&nbsp;гостем</a>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="playlist-wrap" id="playlists">
+  <div class="container">
+    <div class="playlist">
+      <div class="playlist-left">
+        <h1 class="playlist-title">Плейлисты</h1>
+        <div class="playlist-bottom">
+          <div class="playlist-warning">
+            Раздел «Плейлисты» может содержать информацию, не предназначенную для несовершеннолетних
+            <div class="text-italic">&copy; 2021 l W-Wave</div>
+          </div>
+          <div class="playlist-warning-age">18+</div>
+        </div>
+      </div>
+      <div class="playlist-warning-media">
+        <div class="playlist-warning-media__text">
+          Раздел «Плейлисты» может содержать информацию, не предназначенную для несовершеннолетних
+          <div class="text-italic">&copy; 2021 l W-Wave</div>
+        </div>
+        <div class="playlist-warning-media__age">18+</div>
+      </div>
+      <div class="playlist-right">
+        <a href="#" class="playlist-item">
+          <picture class="playlist-item__pic">
+            <!-- <source srcset="./img/playlist_1.png" media="(max-width: 1200px)"> -->
+            <img src="images/png/img-playlist_1.png" alt="">
+          </picture>
+          <div class="playlist-item__flag playlist-item__flag--ru"></div>
+          <div class="playlist-item__content">
+            <div class="playlist-item__name">Ploho</div>
+            <div class="playlist-item__text">3 последних альбома</div>
+          </div>
+        </a>
+        <a href="#" class="playlist-item">
+          <picture class="playlist-item__pic">
+            <!-- <source srcset="./img/playlist_2.png" media="(max-width: 1200px)"> -->
+            <img src="images/png/img-playlist_2.png" alt="">
+          </picture>
+          <div class="playlist-item__flag playlist-item__flag--ru"></div>
+          <div class="playlist-item__content">
+            <div class="playlist-item__name">Molchat Doma</div>
+            <div class="playlist-item__text">Все песни</div>
+          </div>
+        </a>
+        <a href="#" class="playlist-item">
+          <picture class="playlist-item__pic">
+            <!-- <source srcset="./img/playlist_3.png" media="(max-width: 1200px)"> -->
+            <img src="images/png/img-playlist_3.png" alt="">
+          </picture>
+          <div class="playlist-item__flag playlist-item__flag--ru"></div>
+          <div class="playlist-item__content">
+            <div class="playlist-item__name">Motorama</div>
+            <div class="playlist-item__text">Все синглы</div>
+          </div>
+        </a>
+        <a href="#" class="playlist-item">
+          <picture class="playlist-item__pic">
+            <!-- <source srcset="./img/playlist_4.png" media="(max-width: 1200px)"> -->
+            <img src="images/png/img-playlist_4.png" alt="">
+          </picture>
+          <div class="playlist-item__flag playlist-item__flag--ru"></div>
+          <div class="playlist-item__content">
+            <div class="playlist-item__name">Human Tetris</div>
+            <div class="playlist-item__text">3 последних альбома</div>
+          </div>
+        </a>
+        <a href="#" class="playlist-item">
+          <picture class="playlist-item__pic">
+            <!-- <source srcset="./img/playlist_5.png" media="(max-width: 1200px)"> -->
+            <img src="images/png/img-playlist_5.png" alt="">
+          </picture>
+          <div class="playlist-item__flag playlist-item__flag--ru"></div>
+          <div class="playlist-item__content">
+            <div class="playlist-item__name">Буерак</div>
+            <div class="playlist-item__text">Все EP</div>
+          </div>
+        </a>
+        <a href="#" class="playlist-item">
+          <picture class="playlist-item__pic">
+            <!-- <source srcset="./img/playlist_6.png" media="(max-width: 1200px)"> -->
+            <img src="images/png/img-playlist_6.png" alt="">
+          </picture>
+          <div class="playlist-item__flag playlist-item__flag--ru"></div>
+          <div class="playlist-item__content">
+            <div class="playlist-item__name">Июльские Дни</div>
+            <div class="playlist-item__text">Альбом «Колокол»</div>
+          </div>
+        </a>
+        <a href="#" class="playlist-item">
+          <picture class="playlist-item__pic">
+            <!-- <source srcset="./img/playlist_7.png" media="(max-width: 1200px)"> -->
+            <img src="images/png/img-playlist_7.png" alt="">
+          </picture>
+          <div class="playlist-item__flag playlist-item__flag--en"></div>
+          <div class="playlist-item__content">
+            <div class="playlist-item__name">Joy Division</div>
+            <div class="playlist-item__text">Лучшее за все время</div>
+          </div>
+        </a>
+        <a href="#" class="playlist-item">
+          <picture class="playlist-item__pic">
+            <!-- <source srcset="./img/playlist_8.png" media="(max-width: 1200px)"> -->
+            <img src="images/png/img-playlist_8.png" alt="">
+          </picture>
+          <div class="playlist-item__flag playlist-item__flag--en"></div>
+          <div class="playlist-item__content">
+            <div class="playlist-item__name">The Cure</div>
+            <div class="playlist-item__text">Лучшее за все время</div>
+          </div>
+        </a>
+        <a href="#" class="playlist-item">
+          <picture class="playlist-item__pic">
+            <!-- <source srcset="./img/playlist_9.png" media="(max-width: 1200px)"> -->
+            <img src="images/png/img-playlist_9.png" alt="">
+          </picture>
+          <div class="playlist-item__flag playlist-item__flag--en"></div>
+          <div class="playlist-item__content">
+            <div class="playlist-item__name">The Smiths</div>
+            <div class="playlist-item__text">Период 1984–1988</div>
+          </div>
+        </a>
+        <a href="#" class="playlist-item">
+          <picture class="playlist-item__pic">
+            <!-- <source srcset="./img/playlist_10.png" media="(max-width: 1200px)"> -->
+            <img src="images/png/img-playlist_10.png" alt="">
+          </picture>
+          <div class="playlist-item__flag playlist-item__flag--en"></div>
+          <div class="playlist-item__content">
+            <div class="playlist-item__name">New Order</div>
+            <div class="playlist-item__text">Хиты</div>
+          </div>
+        </a>
+        <a href="#" class="playlist-item">
+          <picture class="playlist-item__pic">
+            <!-- <source srcset="./img/playlist_11.png" media="(max-width: 1200px)"> -->
+            <img src="images/png/img-playlist_11.png" alt="">
+          </picture>
+          <div class="playlist-item__flag playlist-item__flag--en"></div>
+          <div class="playlist-item__content">
+            <div class="playlist-item__name">Bauhaus</div>
+            <div class="playlist-item__text">Все синглы</div>
+          </div>
+        </a>
+        <a href="#" class="playlist-item">
+          <picture class="playlist-item__pic">
+            <!-- <source srcset="./img/playlist_12.png" media="(max-width: 1200px)"> -->
+            <img src="images/png/img-playlist_12.png" alt="">
+          </picture>
+          <div class="playlist-item__flag playlist-item__flag--en"></div>
+          <div class="playlist-item__content">
+            <div class="playlist-item__name">Gang Of Four</div>
+            <div class="playlist-item__text">3 последних альбома</div>
+          </div>
+        </a>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<section class="radio-wave-wrap">
+  <div class="container">
+    <div class="radio-wave">
+      <div class="radio-wave__left">
+        <picture class="radio-wave__pic">
+          <img src="images/png/img-radio.png" alt="">
+        </picture>
+        <div class="radio-wave__new"></div>
+      </div>
+      <div class="radio-wave__right">
+        <h1 class="radio-wave__title">Будь с нами на одной волне!</h1>
+        <div class="radio-wave-vector"></div>
+        <div class="radio-wave__text">
+          <span class="radio-wave-text__top">Друзья, рады представить вам продукт нашего производства! Да-да, несмотря на то, что мы только начали свой путь радиовещателей, нам хочется, чтобы вы могли как следует нас расслышать:)</span>
+          <span class="radio-wave-text__bottom">Итак, встречайте! Портативный радиоприёмник-колонка W-Wave 1.0 xm. Тщательный подбор всех делатей, ручная сборка, качественный звук. Пока доступно только 60 штук в 3 цветах, но мы активно трудимся над новыми партиями и дизайном. Спешите приобрести!</span>
+        </div>
+        <div class="radio-wave__price">2 800 ₽</div>
+        <div class="radio-wave-market">
+          <a href="#" class="radio-wave-market__link">Купить на Яндекс.Маркет</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="about-us-wrap" id="about-us">
+  <div class="container">
+    <div class="about-us">
+      <h1 class="about-us__title">О нас</h1>
+      <p class="about-us__text">Приём-приём! Как слышно? Мы уже в эфире? Отлично, поехали!</p>
+      <p class="about-us__descr">
+        Друзья, мы будем очень рады, если вы поможете стать нам лучше. Нам важен каждый слушатель, поэтому вы можете
+        поделиться обратной связью о наших предеачах, темах, подборках и вообще обо всём! Это можно сделать либо написав
+        нам в форме ниже, либо кликнув на наши соцсети в подвале сайта. Спасибо! Услышимся!:)
+      </p>
+      <div class="about-us__decoration"></div>
+    </div>
+    <div class="about-swiper-container">
+      <div class="about-swiper-wrap">
+        <div class="about-swiper swiper-wrapper">
+          <div class="about-swiper__item swiper-slide about-swiper__item__margin" role="region" aria-label="Галерея"
+               tabindex="0">
+            <picture class="about-swiper__pic">
+              <source srcset="./images/png/img-people1.png" media="(max-width: 960px)">
+              <source srcset="./images/png/people1-1024.png" media="(max-width: 1280px)">
+              <img src="images/png/img-people1.png" alt="">
+            </picture>
+            <div class="about-swiper__name">Дмитрий Гутенберг</div>
+            <div class="about-swiper__text">Эксперт (ну, почти) по всем вопросам (почти)</div>
+          </div>
+          <div class="about-swiper__item swiper-slide about-swiper__item__margin" role="region" aria-label="Галерея"
+               tabindex="0">
+            <picture class="about-swiper__pic">
+              <source srcset="./images/png/img-people2.png" media="(max-width: 960px)">
+              <source srcset="./images/png/people2-1024.png" media="(max-width: 1280px)">
+              <img src="images/png/img-people2.png" alt="">
+            </picture>
+            <div class="about-swiper__name">Анна Васильева</div>
+            <div class="about-swiper__text">Как я здесь оказалась? А главное — зачем?</div>
+          </div>
+          <div class="about-swiper__item swiper-slide" role="region" aria-label="Галерея" tabindex="0">
+            <picture class="about-swiper__pic">
+              <source srcset="./images/png/img-people3.png" media="(max-width: 960px)">
+              <source srcset="./images/png/people3-1024.png" media="(max-width: 1280px)">
+              <img src="images/png/img-people3.png" alt="">
+            </picture>
+            <div class="about-swiper__name">Пётр Дмитриевский</div>
+            <div class="about-swiper__text">Господа! Внимание! Благодарю за внимание!</div>
+          </div>
+          <div class="about-swiper__item swiper-slide" role="region" aria-label="Галерея" tabindex="0">
+            <picture class="about-swiper__pic">
+              <source srcset="./images/png/img-people4.png" media="(max-width: 960px)">
+              <source srcset="./images/png/people4-1024.png" media="(max-width: 1280px)">
+              <img src="images/png/img-people4.png" alt="">
+            </picture>
+            <div class="about-swiper__name">Татьяна Флеганова</div>
+            <div class="about-swiper__text">Одна я в пальто стою красивая, а вокруг…</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- form -->
+    <div class="about-form">
+      <form action="#" class="js-form">
+        <div class="form-group">
+          <textarea placeholder="Что скажете?" name="text" class="about-form__field about-form__field_textarea"
+                    aria-label="Текстовое поле" data-validate-field="message"></textarea>
+        </div>
+        <div class="form-group form-group-input">
+          <input type="text" class="about-form__field about-form__name" placeholder="Имя" autocomplete="off" name="text"
+                 aria-label="Текстовое поле" data-validate-field="name">
+          <input type="email" class="about-form__field about-form__email" placeholder="E-mail" autocomplete="off"
+                 name="email" id="email"
+                 aria-label="Текстовое поле" data-validate-field="email">
+        </div>
+        <button type="submit" class="about-form__btn">Отправить</button>
+        <div class="about-form-approval">
+          <input type="checkbox" name="politics" id="politics" checked>
+          <label for="politics" class="about-form-approval">Согласен на обработку персональных данных</label>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<div class="footer-wrap">
+  <div class="container">
+    <div class="footer">
+      <div class="footer-left">
+        <a class="footer-logo" aria-label="Логотип W-Wave" href="#">
+          <img src="images/svg/img-logo-footer.svg" alt="Logo">
+        </a>
+        <div class="footer-icons">
+          <a href="#" class="footer-icons__link">
+            <picture>
+              <source srcset="images/svg/youtube_footer_960.svg" media="(max-width: 960px)">
+              <img src="images/svg/youtube_footer.svg" alt="youtube">
+            </picture>
+          </a>
+          <a href="#" class="footer-icons__link">
+            <picture>
+              <source srcset="images/svg/odnoklasniki_guest_960.svg" media="(max-width: 960px)">
+              <img src="images/svg/odnoklasniki_guest.svg" alt="odnoklasniki">
+            </picture>
+          </a>
+          <a href="#" class="footer-icons__link">
+            <picture>
+              <source srcset="images/svg/vk_footer_960.svg" media="(max-width: 960px)">
+              <img src="images/svg/vk_footer.svg" alt="vk">
+            </picture>
+          </a>
+        </div>
+
+      </div>
+      <div class="footer-right">
+        <ul class="footer-right__list">
+          <li><a href="#podcasts" class="footer-right__list-link">Подкасты</a></li>
+          <li><a href="#playlists" class="footer-right__list-link">Плейлисты</a></li>
+          <li><a href="#" class="footer-right__list-link">Новости</a></li>
+          <li><a href="#shows" class="footer-right__list-link">Передачи</a></li>
+          <li><a href="#" class="footer-right__list-link">Сетка</a></li>
+          <li><a href="#" class="footer-right__list-link">Блоги</a></li>
+          <li><a href="#guests" class="footer-right__list-link">Гости</a></li>
+          <li><a href="#about-us" class="footer-right__list-link">О нас</a></li>
+          <li><a href="#" class="footer-right__list-link">Топы</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="footer-copyright">
+    W-WAVE®2023
+  </div>
+</div>
+</body>
+</html>
