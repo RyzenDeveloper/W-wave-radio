@@ -722,6 +722,10 @@
     align-items: center;
   }
 
+  .header__search-button {
+    top: 4px;
+  }
+
   .header-up-mobile img {
     width: 87px;
     height: 10px;
