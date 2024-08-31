@@ -1,7 +1,8 @@
 @media (max-width: 1280px) {
   .container {
+    margin: 0;
     max-width: 100%;
-    margin: 0 100px;
+    padding: 0 100px;
   }
 
   .header-logo {
@@ -17,7 +18,6 @@
     padding-top: 32px;
     padding-bottom: 21px;
     text-decoration: none;
-    /*background-color: var(--color-gray2);*/
     border-bottom: 1px solid #E6E8EC;
   }
 
@@ -26,13 +26,12 @@
   }
 
   .header__search-button {
-    position: absolute; /* Используйте абсолютное позиционирование */
-    top: 28px; /* Отступ сверху для выравнивания с логотипом */
-    right: 100px; /* Отступ справа */
-    margin: 0; /* Убираем стандартные отступы */
+    position: absolute;
+    top: 28px;
+    right: 100px;
+    margin: 0;
   }
 
-  /* Изменение выравнивания списка навигации */
   .header-up-list {
     flex: 1 1 auto;
     gap: 0;
@@ -112,11 +111,11 @@
     width: 31.3%;
   }
 
-  .shows-item__visible {
+  .shows-visible {
     opacity: 0;
   }
 
-  .shows-archive__hidden {
+  .shows-hidden {
     opacity: 1;
     display: block;
   }
@@ -127,10 +126,6 @@
 
   .shows-item:nth-child(5) {
     order: 2;
-  }
-
-  .shows-item:nth-child(7) {
-    /*margin-left: calc(min(31.3%, 255px) + 24px);*/
   }
 
   .shows-item:nth-child(3),
@@ -165,6 +160,22 @@
   .radio-wave__left {
     margin-top: 118px;
     flex: 1 1 50%;
+  }
+
+  .radio-wave-wrap {
+    padding: 94px 0 78px;
+  }
+
+  .radio-wave-market__link {
+    padding: 25px 13.5px 22px 41.5px;
+  }
+
+  .radio-wave__text {
+    max-width: 397px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 12px;
+    line-height: 28.8px;
   }
 
   .radio-wave__right {
@@ -310,19 +321,6 @@
     margin-bottom: 32px;
   }
 
-  .radio-wave-wrap {
-    padding: 94px 0 78px;
-  }
-
-  .radio-wave-market__link {
-    padding: 25px 13.5px 22px 41.5px;
-  }
-
-  .radio-wave__text {
-    max-width: 397px;
-    display: block;
-  }
-
   .about-us__descr,
   .about-us__text {
     width: 65%;
@@ -345,7 +343,7 @@
   }
 
   .about-swiper__item {
-    width: 48%;
+    width: 398px;
   }
 
   .about-swiper__item__margin {
@@ -358,7 +356,7 @@
 
   .about-swiper {
     flex-wrap: wrap;
-    margin-bottom: 23px;
+    /*margin-bottom: 23px;*/
   }
 
   .about-swiper-btn {
@@ -389,8 +387,9 @@
 
 @media (max-width: 1010px) {
   .container {
+    margin: 0;
     max-width: 100%;
-    margin: 0 114px;
+    padding: 0 114px;
   }
 
   .header-up {
@@ -565,10 +564,6 @@
     padding: 93px 0 116px 0;
   }
 
-  .playlist-left {
-    /*margin-bottom: 64px;*/
-  }
-
   .playlist-warning-media__text {
     max-width: 428px;
   }
@@ -629,6 +624,10 @@
     margin-left: -114px;
     margin-bottom: 26px;
     background: url(../images/svg/img-spiral-star_768.svg) no-repeat 0 0;
+  }
+
+  .about-swiper__item {
+    width: 255px;
   }
 
   .about-us {
@@ -713,7 +712,8 @@
 
 @media (max-width: 700px) {
   .container {
-    margin: 0 32px;
+    margin: 0;
+    padding: 0 32px;
   }
 
   .header-up-mobile {
@@ -724,6 +724,7 @@
 
   .header__search-button {
     top: 4px;
+    right: 31px;
   }
 
   .header-up-mobile img {
@@ -1011,8 +1012,6 @@
   }
 
   .shows-item__more span {
-    color: var(--color-violet);
-    background: url(../images/png/icons-arrow-320.png) no-repeat 100%;
     font-size: 12px;
   }
 
@@ -1318,7 +1317,7 @@
     flex: 0 1 auto;
   }
 
-  .shows-item__more span {
+  .shows-item__more a {
     padding-right: 25px;
   }
 

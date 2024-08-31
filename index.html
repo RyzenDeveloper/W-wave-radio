@@ -11,12 +11,12 @@
   <link rel="shortcut icon" type="image/png" href="favicons/icons-w-icon.svg">
 </head>
 <body>
+<main>
 <header class="header">
   <div class="header-up-wrap">
     <div class="header-logo-gray">
       <div class="container">
         <div class="header-up-mobile">
-          <!-- Logo Link -->
           <a aria-label="Logotype W-Wave" href="#">
             <img src="images/svg/img-logo-wave.svg" alt="Logo">
           </a>
@@ -25,11 +25,9 @@
     </div>
     <div class="container">
       <nav class="header-up">
-        <!-- Logo for desktop -->
         <a class="header-logo" aria-label="Logotype W-wave" href="#">
           <img src="images/svg/img-logo-wave.svg" alt="Logo">
         </a>
-        <!-- Upper Menu Links -->
         <ul class="header-up-list" id="menu">
           <li><a href="#podcasts" class="header-up-list__link">Подкасты</a></li>
           <li><a href="#shows" class="header-up-list__link">Передачи</a></li>
@@ -37,7 +35,6 @@
           <li><a href="#playlists" class="header-up-list__link">Плейлисты</a></li>
           <li><a href="#about-us" class="header-up-list__link">О нас</a></li>
         </ul>
-        <!-- Search Functionality -->
         <div class="header-search">
           <button class="header__search-button" aria-label="Open the search form">
             <svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -57,14 +54,11 @@
 <section class="radio">
   <div class="container">
     <div class="radio-content">
-      <!-- Title with a styled span for the radio name -->
       <h1 class="radio-content__title">Радио <span class="text-italic">W-Wave</span></h1>
-      <!-- Descriptive text about the radio station -->
       <p class="radio-content__text">
         Привет, на связи W-Wave! Раньше мы были изданием, а теперь пробуем себя в разоворном жанре. Говорим о музыке,
         политике, истории, науке и культуре. Здесь, помимо прямого эфира — архив передач и многое другое:)
       </p>
-      <!-- Button to start listening to the radio -->
       <button class="radio-listen">Слушать эфир</button>
     </div>
   </div>
@@ -84,9 +78,9 @@
           <div class="podcasts-content">
             <div class="podcasts-content__up">
               <div class="podcasts-info">
-                <div class="podcasts-info__time">15:43</div>
-                <div class="podcasts-info__title">Европа. XIX век</div>
-                <div class="podcasts-info__author">Дмитрий Гутенберг</div>
+                <time class="podcasts-info__time">15:43</time>
+                <h2 class="podcasts-info__title">Европа. XIX век</h2>
+                <span class="podcasts-info__author">Дмитрий Гутенберг</span>
               </div>
             </div>
           </div>
@@ -100,9 +94,9 @@
           <div class="podcasts-content">
             <div class="podcasts-content__up">
               <div class="podcasts-info">
-                <div class="podcasts-info__time">5:32</div>
-                <div class="podcasts-info__title">О музыке</div>
-                <div class="podcasts-info__author">Дмитрий Гутенберг</div>
+                <time class="podcasts-info__time">5:32</time>
+                <h2 class="podcasts-info__title">О музыке</h2>
+                <span class="podcasts-info__author">Дмитрий Гутенберг</span>
               </div>
             </div>
           </div>
@@ -116,9 +110,9 @@
           <div class="podcasts-content">
             <div class="podcasts-content__up">
               <div class="podcasts-info">
-                <div class="podcasts-info__time">8:54</div>
-                <div class="podcasts-info__title">Люди сегодня</div>
-                <div class="podcasts-info__author">Анна Васильева</div>
+                <time class="podcasts-info__time">8:54</time>
+                <h2 class="podcasts-info__title">Люди сегодня</h2>
+                <span class="podcasts-info__author">Анна Васильева</span>
               </div>
             </div>
           </div>
@@ -132,9 +126,9 @@
           <div class="podcasts-content">
             <div class="podcasts-content__up">
               <div class="podcasts-info">
-                <div class="podcasts-info__time">9:04</div>
-                <div class="podcasts-info__title">Хэллоу, Африка!</div>
-                <div class="podcasts-info__author">Пётр Дмитриевский</div>
+                <time class="podcasts-info__time">9:04</time>
+                <h2 class="podcasts-info__title">Хэллоу, Африка!</h2>
+                <span class="podcasts-info__author">Пётр Дмитриевский</span>
               </div>
             </div>
           </div>
@@ -148,9 +142,9 @@
           <div class="podcasts-content">
             <div class="podcasts-content__up">
               <div class="podcasts-info">
-                <div class="podcasts-info__time">7:03</div>
-                <div class="podcasts-info__title">Обо всём</div>
-                <div class="podcasts-info__author">Пётр Дмитриевский</div>
+                <time class="podcasts-info__time">7:03</time>
+                <h2 class="podcasts-info__title">Обо всём</h2>
+                <span class="podcasts-info__author">Пётр Дмитриевский</span>
               </div>
             </div>
           </div>
@@ -164,12 +158,11 @@
           <div class="podcasts-content">
             <div class="podcasts-content__up">
               <div class="podcasts-info">
-                <div class="podcasts-info__time">9:15</div>
-                <div class="podcasts-info__title">Физика цвета</div>
-                <div class="podcasts-info__author">Татьяна Флеганова</div>
+                <time class="podcasts-info__time">9:15</time>
+                <h2 class="podcasts-info__title">Физика цвета</h2>
+                <span class="podcasts-info__author">Татьяна Флеганова</span>
               </div>
             </div>
-
           </div>
         </li>
         <li class="podcasts-list__item">
@@ -181,9 +174,9 @@
           <div class="podcasts-content">
             <div class="podcasts-content__up">
               <div class="podcasts-info">
-                <div class="podcasts-info__time">16:04</div>
-                <div class="podcasts-info__title">Источник звука</div>
-                <div class="podcasts-info__author">Пётр Дмитриевский</div>
+                <time class="podcasts-info__time">16:04</time>
+                <h2 class="podcasts-info__title">Источник звука</h2>
+                <span class="podcasts-info__author">Пётр Дмитриевский</span>
               </div>
             </div>
           </div>
@@ -197,9 +190,9 @@
           <div class="podcasts-content">
             <div class="podcasts-content__up">
               <div class="podcasts-info">
-                <div class="podcasts-info__time">6:55</div>
-                <div class="podcasts-info__title">Правила этикета</div>
-                <div class="podcasts-info__author">Татьяна Флеганова</div>
+                <time class="podcasts-info__time">6:55</time>
+                <h2 class="podcasts-info__title">Правила этикета</h2>
+                <span class="podcasts-info__author">Татьяна Флеганова</span>
               </div>
             </div>
           </div>
@@ -215,106 +208,106 @@
       <div class="shows-item shows-item_select">
         <h1 class="shows-title">Передачи</h1>
       </div>
-      <div class="shows-item shows-item_archive shows-item__visible">
+      <div class="shows-item shows-item_archive shows-visible">
         <picture class="shows-mic">
           <img src="images/svg/img-shows_mic.svg" alt="">
         </picture>
         <div class="shows-archive">
           <a href="#" class="shows-archive__link">Архив</a>
-          <div class="shows-archive__text">
+          <p class="shows-archive__text">
             В архив попадают все передачи, которые вы пропустили! Enjoy:)
-          </div>
+          </p>
         </div>
       </div>
-      <a href="#" class="shows-item">
+      <div class="shows-item">
         <picture class="shows-item__pic">
           <source srcset="./images/png/img-shows_1_320.png" media="(max-width: 480px)">
           <img src="images/png/img-shows_1.png" alt="">
         </picture>
         <div class="shows-item__content">
-          <div class="shows-item__name">О людях и книгах</div>
-          <div class="shows-item__text">Анонсируется отдельно</div>
+          <p class="shows-item__name">О людях и книгах</p>
+          <p class="shows-item__text">Анонсируется отдельно</p>
           <div class="shows-item__more">
-            <span>Подробнее</span>
+            <a class="shows-item__link" href="#">Подробнее</a>
           </div>
         </div>
-      </a>
-      <a href="#" class="shows-item">
+      </div>
+      <div class="shows-item">
         <picture class="shows-item__pic">
           <source srcset="./images/png/img-shows_2_320.png" media="(max-width: 480px)">
           <img src="images/png/img-shows_2.png" alt="">
         </picture>
         <div class="shows-item__content">
-          <div class="shows-item__name">Графомания td</div>
-          <div class="shows-item__text">По понедельникам в 10:00</div>
+          <p class="shows-item__name">Графомания td</p>
+          <p class="shows-item__text">По понедельникам в 10:00</p>
           <div class="shows-item__more">
-            <span>Подробнее</span>
+            <a href="#">Подробнее</a>
           </div>
         </div>
-      </a>
-      <a href="#" class="shows-item">
+      </div>
+      <div class="shows-item">
         <picture class="shows-item__pic">
           <source srcset="./images/png/img-shows_3_320.png" media="(max-width: 480px)">
           <img src="images/png/img-shows_3.png" alt="">
         </picture>
         <div class="shows-item__content">
-          <div class="shows-item__name">Не Рим, не Троя</div>
-          <div class="shows-item__text">По вторникам в 12:00</div>
+          <p class="shows-item__name">Не Рим, не Троя</p>
+          <p class="shows-item__text">По вторникам в 12:00</p>
           <div class="shows-item__more">
-            <span>Подробнее</span>
+            <a href="#">Подробнее</a>
           </div>
         </div>
-      </a>
-      <a href="#" class="shows-item">
+      </div>
+      <div class="shows-item">
         <picture class="shows-item__pic">
           <source srcset="./images/png/img-shows_4_320.png" media="(max-width: 480px)">
           <img src="images/png/img-shows_4.png" alt="">
         </picture>
         <div class="shows-item__content">
-          <div class="shows-item__name">Эрудит</div>
-          <div class="shows-item__text">По пятницам в 17:00</div>
+          <p class="shows-item__name">Эрудит</p>
+          <p class="shows-item__text">По пятницам в 17:00</p>
           <div class="shows-item__more">
-            <span>Подробнее</span>
+            <a href="#">Подробнее</a>
           </div>
         </div>
-      </a>
-      <div class="shows-item shows-item_archive shows-archive__hidden">
+      </div>
+      <div class="shows-item shows-item_archive shows-hidden">
         <picture class="shows-mic">
           <img src="images/svg/img-shows_mic.svg" alt="">
         </picture>
         <div class="shows-archive">
           <a href="#" class="shows-archive__link">Архив</a>
-          <div class="shows-archive__text">
+          <p class="shows-archive__text">
             В архив попадают все передачи, которые вы пропустили! Enjoy:)
-          </div>
+          </p>
         </div>
       </div>
-      <a href="#" class="shows-item">
+      <div class="shows-item">
         <picture class="shows-item__pic">
           <source srcset="./images/png/img-shows_5_320.png" media="(max-width: 480px)">
           <img src="images/png/img-shows_5.png" alt="">
         </picture>
         <div class="shows-item__content">
-          <div class="shows-item__name">Тонкости эпох</div>
-          <div class="shows-item__text">По субботам в 10:00</div>
+          <p class="shows-item__name">Тонкости эпох</p>
+          <p class="shows-item__text">По субботам в 10:00</p>
           <div class="shows-item__more">
-            <span>Подробнее</span>
+            <a href="#">Подробнее</a>
           </div>
         </div>
-      </a>
-      <a href="#" class="shows-item">
+      </div>
+      <div class="shows-item">
         <picture class="shows-item__pic">
           <source srcset="./images/png/img-shows_6_320.png" media="(max-width: 480)">
           <img src="images/png/img-shows_6.png" alt="">
         </picture>
         <div class="shows-item__content">
-          <div class="shows-item__name">Живые мысли</div>
-          <div class="shows-item__text">По воскресеньям в 15:30</div>
+          <p class="shows-item__name">Живые мысли</p>
+          <p class="shows-item__text">По воскресеньям в 15:30</p>
           <div class="shows-item__more">
-            <span>Подробнее</span>
+            <a href="#">Подробнее</a>
           </div>
         </div>
-      </a>
+      </div>
     </div>
   </div>
   <div class="shows-archive-container">
@@ -416,7 +409,6 @@
       <div class="playlist-right">
         <a href="#" class="playlist-item">
           <picture class="playlist-item__pic">
-            <!-- <source srcset="./img/playlist_1.png" media="(max-width: 1200px)"> -->
             <img src="images/png/img-playlist_1.png" alt="">
           </picture>
           <div class="playlist-item__flag playlist-item__flag--ru"></div>
@@ -427,7 +419,6 @@
         </a>
         <a href="#" class="playlist-item">
           <picture class="playlist-item__pic">
-            <!-- <source srcset="./img/playlist_2.png" media="(max-width: 1200px)"> -->
             <img src="images/png/img-playlist_2.png" alt="">
           </picture>
           <div class="playlist-item__flag playlist-item__flag--ru"></div>
@@ -438,7 +429,6 @@
         </a>
         <a href="#" class="playlist-item">
           <picture class="playlist-item__pic">
-            <!-- <source srcset="./img/playlist_3.png" media="(max-width: 1200px)"> -->
             <img src="images/png/img-playlist_3.png" alt="">
           </picture>
           <div class="playlist-item__flag playlist-item__flag--ru"></div>
@@ -566,8 +556,8 @@
         <h1 class="radio-wave__title">Будь с нами на одной волне!</h1>
         <div class="radio-wave-vector"></div>
         <div class="radio-wave__text">
-          <span class="radio-wave-text__top">Друзья, рады представить вам продукт нашего производства! Да-да, несмотря на то, что мы только начали свой путь радиовещателей, нам хочется, чтобы вы могли как следует нас расслышать:)</span>
-          <span class="radio-wave-text__bottom">Итак, встречайте! Портативный радиоприёмник-колонка W-Wave 1.0 xm. Тщательный подбор всех делатей, ручная сборка, качественный звук. Пока доступно только 60 штук в 3 цветах, но мы активно трудимся над новыми партиями и дизайном. Спешите приобрести!</span>
+          <span>Друзья, рады представить вам продукт нашего производства! Да-да, несмотря на то, что мы только начали свой путь радиовещателей, нам хочется, чтобы вы могли как следует нас расслышать:)</span>
+          <span>Итак, встречайте! Портативный радиоприёмник-колонка W-Wave 1.0 xm. Тщательный подбор всех делатей, ручная сборка, качественный звук. Пока доступно только 60 штук в 3 цветах, но мы активно трудимся над новыми партиями и дизайном. Спешите приобрести!</span>
         </div>
         <div class="radio-wave__price">2 800 ₽</div>
         <div class="radio-wave-market">
@@ -593,39 +583,39 @@
     <div class="about-swiper-container">
       <div class="about-swiper-wrap">
         <div class="about-swiper swiper-wrapper">
-          <div class="about-swiper__item swiper-slide about-swiper__item__margin" role="region" aria-label="Галерея"
+          <div class="about-swiper__item about-swiper__item__margin" role="region" aria-label="Галерея"
                tabindex="0">
             <picture class="about-swiper__pic">
-              <source srcset="./images/png/img-people1.png" media="(max-width: 960px)">
-              <source srcset="./images/png/people1-1024.png" media="(max-width: 1280px)">
+              <source srcset="./images/png/img-people1.png" media="(max-width: 1010px)">
+              <source srcset="./images/png/people1-1024.png" media="(max-width: 1024px)">
               <img src="images/png/img-people1.png" alt="">
             </picture>
             <div class="about-swiper__name">Дмитрий Гутенберг</div>
             <div class="about-swiper__text">Эксперт (ну, почти) по всем вопросам (почти)</div>
           </div>
-          <div class="about-swiper__item swiper-slide about-swiper__item__margin" role="region" aria-label="Галерея"
+          <div class="about-swiper__item about-swiper__item__margin" role="region" aria-label="Галерея"
                tabindex="0">
             <picture class="about-swiper__pic">
-              <source srcset="./images/png/img-people2.png" media="(max-width: 960px)">
-              <source srcset="./images/png/people2-1024.png" media="(max-width: 1280px)">
+              <source srcset="./images/png/img-people2.png" media="(max-width: 1010px)">
+              <source srcset="./images/png/people2-1024.png" media="(max-width: 1024px)">
               <img src="images/png/img-people2.png" alt="">
             </picture>
             <div class="about-swiper__name">Анна Васильева</div>
             <div class="about-swiper__text">Как я здесь оказалась? А главное — зачем?</div>
           </div>
-          <div class="about-swiper__item swiper-slide" role="region" aria-label="Галерея" tabindex="0">
+          <div class="about-swiper__item" role="region" aria-label="Галерея" tabindex="0">
             <picture class="about-swiper__pic">
-              <source srcset="./images/png/img-people3.png" media="(max-width: 960px)">
-              <source srcset="./images/png/people3-1024.png" media="(max-width: 1280px)">
+              <source srcset="./images/png/img-people3.png" media="(max-width: 1010px)">
+              <source srcset="./images/png/people3-1024.png" media="(max-width: 1024px)">
               <img src="images/png/img-people3.png" alt="">
             </picture>
             <div class="about-swiper__name">Пётр Дмитриевский</div>
             <div class="about-swiper__text">Господа! Внимание! Благодарю за внимание!</div>
           </div>
-          <div class="about-swiper__item swiper-slide" role="region" aria-label="Галерея" tabindex="0">
+          <div class="about-swiper__item" role="region" aria-label="Галерея" tabindex="0">
             <picture class="about-swiper__pic">
-              <source srcset="./images/png/img-people4.png" media="(max-width: 960px)">
-              <source srcset="./images/png/people4-1024.png" media="(max-width: 1280px)">
+              <source srcset="./images/png/img-people4.png" media="(max-width: 1010px)">
+              <source srcset="./images/png/people4-1024.png" media="(max-width: 1024px)">
               <img src="images/png/img-people4.png" alt="">
             </picture>
             <div class="about-swiper__name">Татьяна Флеганова</div>
@@ -634,7 +624,6 @@
         </div>
       </div>
     </div>
-    <!-- form -->
     <div class="about-form">
       <form action="#" class="js-form">
         <div class="form-group">
@@ -657,8 +646,9 @@
     </div>
   </div>
 </section>
+</main>
 
-<div class="footer-wrap">
+<footer class="footer-wrap">
   <div class="container">
     <div class="footer">
       <div class="footer-left">
@@ -666,22 +656,22 @@
           <img src="images/svg/img-logo-footer.svg" alt="Logo">
         </a>
         <div class="footer-icons">
-          <a href="#" class="footer-icons__link">
+          <a href="#" class="footer-icons__link" aria-label="YouTube">
             <picture>
               <source srcset="images/svg/youtube_footer_960.svg" media="(max-width: 960px)">
-              <img src="images/svg/youtube_footer.svg" alt="youtube">
+              <img src="images/svg/youtube_footer.svg" alt="YouTube">
             </picture>
           </a>
-          <a href="#" class="footer-icons__link">
+          <a href="#" class="footer-icons__link" aria-label="Odnoklassniki">
             <picture>
               <source srcset="images/svg/odnoklasniki_guest_960.svg" media="(max-width: 960px)">
-              <img src="images/svg/odnoklasniki_guest.svg" alt="odnoklasniki">
+              <img src="images/svg/odnoklasniki_guest.svg" alt="Odnoklassniki">
             </picture>
           </a>
-          <a href="#" class="footer-icons__link">
+          <a href="#" class="footer-icons__link" aria-label="VK">
             <picture>
               <source srcset="images/svg/vk_footer_960.svg" media="(max-width: 960px)">
-              <img src="images/svg/vk_footer.svg" alt="vk">
+              <img src="images/svg/vk_footer.svg" alt="VK">
             </picture>
           </a>
         </div>
@@ -705,6 +695,6 @@
   <div class="footer-copyright">
     W-WAVE®2023
   </div>
-</div>
+</footer>
 </body>
 </html>
