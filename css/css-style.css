@@ -431,19 +431,6 @@ body {
   outline: none;
 }
 
-/*.shows-item__link:hover {*/
-/*  color: #6D31EE;*/
-/*  */
-/*}*/
-
-/*.shows-item__link:focus {*/
-/*  background-color: #AA9DFA;;*/
-/*}*/
-
-/*.shows-item__link:active{*/
-/*  color: #4F28A5;*/
-/*}*/
-
 /* GUEST */
 
 .guests {
@@ -535,6 +522,7 @@ body {
   border: 2px solid #AA9DFA;
   z-index: 1;
   transition: .3s ease-in-out;
+  text-decoration:none;
 }
 
 .guests__link::after {
@@ -557,9 +545,21 @@ body {
 }
 
 .guests__link:active {
-  background-color: var(--bs-primary-rgb);
+  background-color: #4F28A5;
   color: var(--color-white);
   outline: none;
+}
+
+.guests__link:hover {
+  border-radius: 77px;
+  background: #AA9DFA;
+  color: var(--color-white);
+}
+
+.guests__link:focus-visible {
+  background-color: #6D31EE;
+  border-radius: 100px;
+  color: var(--color-white);
 }
 
 /* playlist */
@@ -747,8 +747,11 @@ body {
 .radio-wave__text {
   color: var(--color-white);
   font-size: 16px;
-  line-height: 30px;
+  line-height: 28.8px;
   margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
 }
 
 .radio-wave__price {
@@ -781,6 +784,36 @@ body {
   background-color: #BB973E;
   outline: none;
   border: 2px solid var(--color-yellow-light);
+}
+
+.radio-wave__right::before {
+  content: "";
+  display: block;
+  height: 12px;
+  background: url(../images/svg/icons-radio-vector.svg) repeat-x 0 0;
+  order: 2;
+  margin-bottom: 19px;
+}
+
+.radio-wave__text {
+  order: 3;
+}
+
+.radio-wave__right {
+  display: flex;
+  flex-direction: column;
+}
+
+.radio-wave__title {
+  order: 1;
+}
+
+.radio-wave-market {
+  order: 5;
+}
+
+.radio-wave__price {
+  order: 4;
 }
 
 /* about-us */
@@ -891,7 +924,7 @@ body {
   border-radius: 30px;
   margin-bottom: 30px;
   padding: 22px 32px;
-  transition: 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 .about-form__field_textarea {
@@ -1015,12 +1048,21 @@ body {
   color: var(--color-gray);
 }
 
-.footer-icons__link:focus-visible {
-  outline: none;
+.footer-icons__link:hover {
+  color: var(--color-violet);
+  transition: all 0.3s ease;
 }
 
-.footer-icons__link:focus-visible svg path {
-  fill: var(--color-violet-light);
+.footer-icons__link:focus-visible {
+  color: var(--color-violet-light);
+}
+
+.footer-icons__link:active {
+  color: var(--color-violet-dark);
+}
+
+.footer-icons__link svg {
+  fill: currentColor;
 }
 
 @media (hover: hover) and (pointer: fine) {
@@ -1096,12 +1138,6 @@ body {
     background-color: var(--color-violet-light);
     color: var(--color-white);
   }
-
-  .footer-icons__link:hover svg path {
-    fill: var(--color-violet);
-    transition: 0.3s ease;
-  }
-
 }
 
 .header__search-button:active path {
@@ -1182,8 +1218,4 @@ body {
 .about-form__btn:active {
   background-color: var(--color-violet);
   color: var(--color-white);
-}
-
-.footer-icons__link:active svg path {
-  fill: var(--color-violet-dark);
 }
